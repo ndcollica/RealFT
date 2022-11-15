@@ -27,9 +27,13 @@ export const appChains = configureChains(
       // This is ours Alchemy's default API key.
       // You can get your own at https://dashboard.alchemyapi.io
       apiKey: "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF",
+      priority: 0,
     }),
-    publicProvider(),
+    publicProvider({ priority: 1 }),
   ],
+  {
+    stallTimeout: 1_000,
+  },
 );
 
 /**
