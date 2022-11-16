@@ -32,7 +32,14 @@ export const appChains = configureChains(
     publicProvider({ priority: 1 }),
   ],
   {
-    stallTimeout: 1_000,
+    stallTimeout: 2_000,
+    // ...(process.env.NEXT_PUBLIC_ENABLE_MAINNET === "true"
+    //   ? {
+    //       pollingInterval: 30_000,
+    //     }
+    //   : {}),
+
+    pollingInterval: 30_000,
   },
 );
 

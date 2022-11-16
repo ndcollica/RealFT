@@ -22,10 +22,9 @@ export default function Balance({ address }: BalanceProps) {
     isLoading,
   } = useBalance({
     addressOrName: address,
+    watch: true,
     // ToDo: Read this value from config. Disabled for localhost.
-    // watch: true,
-    cacheTime: 10_000,
-    staleTime: 5_000,
+    cacheTime: 30_000,
   });
 
   const onToggleBalance = () => {
