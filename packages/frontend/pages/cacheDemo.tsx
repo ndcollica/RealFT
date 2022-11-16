@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useBlockNumber } from "wagmi";
 
-// So if the if we omit staleTime, useBlockNumber will make the request everytime component mounts
+// So if we omit staleTime, useBlockNumber will make the request everytime component mounts
 // with staleTime it will will actually use the cache data next time you visit the page
 
 const Demo: NextPage = () => {

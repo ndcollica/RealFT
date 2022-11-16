@@ -3,8 +3,9 @@ import Head from "next/head";
 import Link from "next/link";
 // import { useTempTestContract } from "~~/components/useTempTestContract";
 // import { useAppStore } from "~~/services/store/store";
-import { Address, AddressInput, Balance } from "../components/scaffold-eth";
+// import { Address, AddressInput, Balance } from "../components/scaffold-eth";
 // import { useEffect } from "react";
+import { Balance } from "../components/scaffold-eth";
 
 const Home: NextPage = () => {
   // const tempTest = useTempTestContract();
@@ -39,8 +40,8 @@ const Home: NextPage = () => {
           Get started by editing <code className="italic bg-gray-200">packages/frontend/pages/index.tsx</code>
         </p>
 
-        <h3 className="font-bold">Address Component</h3>
-        <Address address="0xd8da6bf26964af9d7eed9e03e53415d37aa96045" />
+        {/* <h3 className="font-bold">Address Component</h3>
+        <Address address="0xd8da6bf26964af9d7eed9e03e53415d37aa96045" /> */}
 
         {/* <p>
           <button className="btn btn-primary" onClick={() => tempTest.onClick()}>
@@ -51,8 +52,8 @@ const Home: NextPage = () => {
         <h3 className="font-bold">Balance Component</h3>
         <Balance address="0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266" />
 
-        <h3 className="font-bold mt-4">Address Input Component</h3>
-        <AddressInput placeholder="Enter address" />
+        {/* <h3 className="font-bold mt-4">Address Input Component</h3>
+        <AddressInput placeholder="Enter address" /> */}
 
         <Link href="/demo">
           <a>TO the demo</a>
