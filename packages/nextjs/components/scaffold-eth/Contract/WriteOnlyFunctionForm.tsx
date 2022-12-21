@@ -1,6 +1,7 @@
 import { FunctionFragment } from "ethers/lib/utils";
 import { Dispatch, SetStateAction, useState } from "react";
-import { useContractWrite, usePrepareContractWrite } from "wagmi";
+// import { useContractWrite, usePrepareContractWrite } from "wagmi";
+import { useContractWrite } from "wagmi";
 import { tryToDisplay } from "./utilsDisplay";
 import InputUI from "./InputUI";
 import { getFunctionInputKey, getParsedEthersError } from "./utilsContract";
@@ -36,32 +37,42 @@ export const WriteOnlyFunctionForm = ({
   const keys = Object.keys(form);
 
   // TODO handle gasPrice
-  const { config, error: inputError } = usePrepareContractWrite({
-    addressOrName: contractAddress,
-    functionName: functionFragment.name,
-    contractInterface: [functionFragment],
-    args: keys.map(key => form[key]),
-    overrides: {
-      value: txValue,
-    },
-  });
+  // const { config, error: inputError } = usePrepareContractWrite({
+  //   addressOrName: contractAddress,
+  //   functionName: functionFragment.name,
+  //   contractInterface: [functionFragment],
+  //   args: keys.map(key => form[key]),
+  //   overrides: {
+  //     value: txValue,
+  //   },
+  // });
 
   const {
     data: result,
     isLoading,
     writeAsync,
   } = useContractWrite({
-    ...config,
+    // ...config,
+    addressOrName: contractAddress,
+    functionName: functionFragment.name,
+    contractInterface: [functionFragment],
+    args: keys.map(key => form[key]),
+    mode: "recklesslyUnprepared",
+    overrides: {
+      value: txValue,
+    },
   });
 
   const handleWrite = async () => {
-    // TODO Show more descriptive error message
-    if (inputError) {
-      const message = getParsedEthersError(inputError);
-      toast.error(message);
-    }
-
+    // if (inputError) {
+    //   const message = getParsedEthersError(inputError);
+    //   console.log("⚡️ ~ file: WriteOnlyFunctionForm.tsx:68 ~ handleWrite ~ message", message);
+    //   toast.error(message);
+    // }
+    console.log("⚡️ ~ file: WriteOnlyFunctionForm.tsx:72 ~ handleWrite ~ writeAsync", writeAsync);
     if (writeAsync && writeTxn) {
+      console.log("⚡️ ~ file: WriteOnlyFunctionForm.tsx:73 ~ handleWrite ~ writeTxn");
+
       try {
         await writeTxn(writeAsync());
         setRefreshDisplayVariables(prevState => !prevState);
@@ -93,7 +104,11 @@ export const WriteOnlyFunctionForm = ({
       <p className="text-black my-0">{functionFragment.name}</p>
       {inputs}
       {functionFragment.payable ? <TxValueInput setTxValue={setTxValue} txValue={txValue} /> : null}
-      <button className={`btn btn-primary btn-sm ${isLoading && "loading"}`} onClick={handleWrite}>
+      <button
+        // disabled={!writeAsync}
+        className={`btn btn-primary btn-sm ${isLoading && "loading"}`}
+        onClick={handleWrite}
+      >
         Send 💸
       </button>
       <span className="break-all block">{tryToDisplay(result)}</span>
