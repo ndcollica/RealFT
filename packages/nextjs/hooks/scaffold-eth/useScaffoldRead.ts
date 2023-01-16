@@ -17,8 +17,8 @@ const useScaffoldRead = (
   return useContractRead({
     ...readConfig,
     functionName,
-    addressOrName: contractAddress,
-    contractInterface: contractABI,
+    address: contractAddress as `0x${string}`,
+    abi: contractABI,
   });
 };
 
