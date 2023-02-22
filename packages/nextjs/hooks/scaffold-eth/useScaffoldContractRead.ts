@@ -13,6 +13,7 @@ import { BigNumber } from "ethers";
 export const useScaffoldContractRead = <TReturn extends BigNumber | string | boolean = any>(
   contractName: string,
   functionName: string,
+  args: any,
   readConfig?: Parameters<typeof useContractRead>[0],
 ) => {
   const configuredChain = getTargetNetwork();
@@ -23,6 +24,7 @@ export const useScaffoldContractRead = <TReturn extends BigNumber | string | boo
     functionName,
     address: deployedContractData?.address,
     abi: deployedContractData?.abi as Abi,
+    args,
     watch: true,
     ...readConfig,
   }) as Omit<ReturnType<typeof useContractRead>, "data"> & {
