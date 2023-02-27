@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { ContractData, ContractInteraction } from "~~/components/ExampleUi";
+import { useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
 
 const ExampleUI: NextPage = () => {
+  const { writeAsync, isLoading } = useScaffoldContractWrite("YourContract", "checkin", undefined, "0.01");
+  const { writeAsync: checkoutFunc, isLoading: checkOutLoading } = useScaffoldContractWrite("YourContract", "checkout");
   return (
     <>
       <Head>
@@ -12,9 +14,16 @@ const ExampleUI: NextPage = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet" />
       </Head>
-      <div className="grid lg:grid-cols-2 flex-grow" data-theme="exampleUi">
-        <ContractInteraction />
-        <ContractData />
+      <div className=" flex flex-col space-y-4 items-center justify-center flex-grow" data-theme="exampleUi">
+        <button className={`btn btn-primary ${isLoading ? "loading" : ""}`} onClick={async () => await writeAsync()}>
+          Checkin
+        </button>
+        <button
+          className={`btn btn-primary ${checkOutLoading ? "loading" : ""}`}
+          onClick={async () => await checkoutFunc()}
+        >
+          CheckOut
+        </button>
       </div>
     </>
   );
