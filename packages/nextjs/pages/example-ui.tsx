@@ -1,8 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { ContractData, ContractInteraction } from "~~/components/ExampleUi";
+import { useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
 
 const ExampleUI: NextPage = () => {
+  const { writeAsync: setGreeting } = useScaffoldContractWrite("YourContract", "setGreeting", ["Hello world !!"], "2");
+  const { writeAsync: withDraw } = useScaffoldContractWrite("YourContract", "withdraw");
+
+  const handleWrite = async () => {
+    await setGreeting();
+    await withDraw();
+  };
+
   return (
     <>
       <Head>
@@ -13,8 +21,11 @@ const ExampleUI: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet" />
       </Head>
       <div className="grid lg:grid-cols-2 flex-grow" data-theme="exampleUi">
-        <ContractInteraction />
-        <ContractData />
+        <button className="btn btn-primary" onClick={handleWrite}>
+          Set and Withdraw
+        </button>
+        {/* <ContractInteraction /> */}
+        {/* <ContractData /> */}
       </div>
     </>
   );
