@@ -21,10 +21,10 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 
-  await deploy("YourContract", {
+  await deploy("MyToken", {
     from: deployer,
     // Contract constructor arguments
-    args: ["0xEA42AA9AD123d9C94CA76aa5E025aDdBadA26C13"],
+    args: [],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -32,7 +32,17 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   });
 
   // Get the deployed contract
-  // const yourContract = await hre.ethers.getContract("YourContract", deployer);
+  const myToken = await hre.ethers.getContract("MyToken", deployer);
+
+  await deploy("ERC20Transfer", {
+    from: deployer,
+    // Contract constructor arguments
+    args: [myToken.address],
+    log: true,
+    // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
+    // automatically mining the contract deployment transaction. There is no effect on live networks.
+    autoMine: true,
+  });
 };
 
 export default deployYourContract;
