@@ -52,19 +52,18 @@ Tokens for new users to be able to generate 10 NFT’s as an incentive to sign u
 
 Initial diagram for app: https://www.figma.com/file/jKIYo52hNW30A4NcbsHysx/Luxvesting-RealFT-Creation?node-id=0%3A1
 
-## ETH Denver Bounties
-https://app.buidlbox.io/ethdenver/ethdenver-2023
+## ETH Denver 2023 Bounties
+- #BUIDLathon 2023 NFTs + Metaverse + Gaming Track
+- Best Use of Polygon
+- Build with Web3Auth
+- Integrate Web3Auth Core-Kit SDK in your Ethereum Application
+- Best Use of Infura NFT API
+- Best Lens app
+- Integrate Lens
+- Best Use of Lens Protocol using Infura
+- Deploy your smart contract on Scroll
+- Scroll ♥ Lens | Cross-chain Decentralized Social Media
 
-
-Protocol Labs - Best project using Filecoin Virtual Machine (FVM) - 25,000 USD Prize Pool in USDC
-Taho - Add Custom Tokens - 2,500 USD Prize Pool in USDC
-Taho - Developer Feature Bonanza - 9,000 USD Prize Pool in USDC
-Threshold - Create your best Threshold content ideas! - 5,000 USD Prize Pool in USDC
-Stellar - NFTs on Soroban - 5,000 USD in USDC
-MetaMask Snaps - Build a MetaMask snap using the Truffle Snaps Box - 1,000 USD Prize Pool in USDC
-Infura - Deploy a Dapp on an L2 using Infura and Truffle - 1,000 USD Prize Pool in USDC
-Scroll - Deploy your smart contract on Scroll - 10,000 USD Prize Pool in USDC
-Web3Auth - Integrate Web3Auth Core-Kit SDK in your Ethereum Application -4,000 USD Prize Pool in USDC
 
 # Built Using:
 
