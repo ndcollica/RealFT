@@ -11,17 +11,20 @@ const Home: NextPage = () => {
     {
       img: "/assets/rolex.jpg",
       title: "Rolex Cosmograph Daytona",
-      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity."
+      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity.",
+      subNFTs: 3
     },
     {
       img: "/assets/ethDenBottle.jpg",
       title: "Eth Denver Water Bottle",
-      description: "Water Bottle from ETH Denver 2018"
+      description: "Water Bottle from ETH Denver 2018",
+      subNFTs: 1
     },
     {
       img: "/assets/tshirt.png",
       title: "Rare Vintage Signed 80s Germs Punk Band T Shirt",
-      description: "Rare Vintage 80s Germs Punk Band GI T Shirt XL Signed Darby Crash Patt smear"
+      description: "Rare Vintage 80s Germs Punk Band GI T Shirt XL Signed Darby Crash Patt smear",
+      subNFTs: 2
     },
   ]
 
@@ -55,6 +58,7 @@ const Home: NextPage = () => {
                   <div className="p-8">
                     <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{val.title}</div>
                     <button className="shadow bg-base-100 rounded-box w-40">View Collection</button>
+                    <p className="mt-2 text-slate-500">subNFT's: {val.subNFTs}</p>
                     <p className="mt-2 text-slate-500">{val.description}</p>
                     <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
                     <button className="shadow bg-base-100 rounded-box w-32">Start Transfer</button>
