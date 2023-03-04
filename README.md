@@ -41,7 +41,7 @@ Users can transfer collection to address from home and individual collection pag
 
 - Nickolas Collica
 
-- Emily Shelton
+- Emily R Shelton
 
 
 ## Competition
