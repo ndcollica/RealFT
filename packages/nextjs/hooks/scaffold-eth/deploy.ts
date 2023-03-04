@@ -7,9 +7,10 @@ const config = require('getconfig')
 
 const CONTRACT_NAME = "Objective"
 
+export{};
 
 
-async function deployContract(name: string, symbol: string) {
+async function deployContract(name:string, symbol:string) {
     const hardhat = require('hardhat')
     const network = hardhat.network.name
 
@@ -23,7 +24,7 @@ async function deployContract(name: string, symbol: string) {
     return deploymentInfo(hardhat, objective)
 }
 
-function deploymentInfo(hardhat: any, objective: any) {
+function deploymentInfo(hardhat:any, objective:any) {
     return {
         network: hardhat.network.name,
         contract: {
@@ -35,7 +36,7 @@ function deploymentInfo(hardhat: any, objective: any) {
     }
 }
 
-async function saveDeploymentInfo(info: any, filename: any = undefined) {
+async function saveDeploymentInfo(info:any, filename:any = undefined) {
     if (!filename) {
         filename = config.deploymentConfigFile || 'minty-deployment.json'
     }
@@ -55,8 +56,8 @@ async function saveDeploymentInfo(info: any, filename: any = undefined) {
 
 async function loadDeploymentInfo() {
     let {deploymentConfigFile} = config
-    let deployInfo: any
-    
+    let deployInfo:any
+
     if (!deploymentConfigFile) {
         console.log('no deploymentConfigFile field found in minty config. attempting to read from default path "./minty-deployment.json"')
         deploymentConfigFile = 'minty-deployment.json'
@@ -65,18 +66,18 @@ async function loadDeploymentInfo() {
     deployInfo = JSON.parse(content)
     try {
         validateDeploymentInfo(deployInfo)
-    } catch (e: any) {
+    } catch (e:any) {
         throw new Error(`error reading deploy info from ${deploymentConfigFile}: ${e.message}`)
     } 
     return deployInfo
 }
 
-function validateDeploymentInfo(deployInfo: any) {
+function validateDeploymentInfo(deployInfo:any) {
     const {contract} = deployInfo
     if (!contract) {
         throw new Error('required field "contract" not found')
     }
-    const required = (arg: any) => {
+    const required = (arg:any) => {
         if (!deployInfo.contract.hasOwnProperty(arg)) {
             throw new Error(`required field "contract.${arg}" not found`)
         }
@@ -87,7 +88,7 @@ function validateDeploymentInfo(deployInfo: any) {
     required('abi')
 }
 
-async function fileExists(path: string) {
+async function fileExists(path:string) {
     try {
         await fs.access(path, F_OK)
         return true
@@ -96,7 +97,7 @@ async function fileExists(path: string) {
     }
 }
 
-async function confirmOverwrite(filename: string) {
+async function confirmOverwrite(filename:string) {
     const answers = await inquirer.prompt([
         {
             type: 'confirm',
