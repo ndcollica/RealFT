@@ -14,9 +14,14 @@ const Home: NextPage = () => {
       description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity."
     },
     {
-      img: "/assets/rolex.jpg",
-      title: "Rolex Cosmograph Daytona",
-      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity."
+      img: "/assets/ethDenBottle.jpg",
+      title: "Eth Denver Water Bottle",
+      description: "Water Bottle from ETH Denver 2018"
+    },
+    {
+      img: "/assets/tshirt.png",
+      title: "Rare Vintage Signed 80s Germs Punk Band T Shirt",
+      description: "Rare Vintage 80s Germs Punk Band GI T Shirt XL Signed Darby Crash Patt smear"
     },
   ]
 
