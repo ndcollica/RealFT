@@ -84,8 +84,7 @@ export default function Header() {
             <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
           </Link>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">Scaffold-eth</span>
-            <span className="text-xs">Ethereum dev stack</span>
+            <span className="font-bold leading-tight">RealFT</span>            
           </div>
         </div>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">{navLinks}</ul>
