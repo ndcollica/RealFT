@@ -33,9 +33,11 @@ const Home: NextPage = () => {
               />
             </div>
             <div className="p-8">
-              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Rolex</div>
-              <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-              <p className="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Rolex Cosmograph Daytona</div>
+              <button className="shadow bg-base-100 rounded-box w-40">View Collection</button>
+              <p className="mt-2 text-slate-500">New and unworn. An inspection by our certified watchmakers guarantees authenticity.</p>
+              <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
+              <button className="shadow bg-base-100 rounded-box w-32">Start Transfer</button>
             </div>
           </div>
         </div>
