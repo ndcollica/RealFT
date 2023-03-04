@@ -4,6 +4,8 @@
 myDAL (Digital Asset Library)
 RealFT
 ProperNFT
+ProperT
+myProperT
 
 ## Problem
 NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. The general public does not know they can attach NFT’s to real world value.
