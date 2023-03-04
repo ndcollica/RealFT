@@ -9,7 +9,7 @@ ProperNFT
 NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. The general public does not know they can attach NFT’s to real world value.
 
 ## Solution
-RealFT solves this problem by allowing anyone to turn their property into an NFT collection. They can add certificates of ownership, maintenance, certificates of authenticity, images of key events with the property, etc. to the collection to add value to their property by making the papertrail to their property as immutable as the blockchain.
+RealFT solves this problem by allowing anyone to turn their property into an NFT collection. They can add images with celebrities for provinance, maintanence records, verifiable credentials for property, etc. to the collection to add value to their property by making the papertrail to their property as immutable as the blockchain.
 
 ### Example
 Let’s say I buy a t-shirt at a concert. I can take a picture of the shirt and mint a new NFT collection. I can then add a subNFT of the shirt being signed by the band! This NFT collection adds value by giving more context to the signature. This can be done with certificates of authenticity of luxury watches, celebrity events with luxury cars, etc. Everyone will see that their NFT’s are attached to things of real world value.
