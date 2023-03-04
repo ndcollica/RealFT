@@ -30,6 +30,8 @@ Users can create a new RFT collection with a photo taken from device or storage.
 
 Users can view collections by clicking on a collection. In the future they will be able to flick through collections as a carousel.
 
+Users can share collections using the Lens button.
+
 Users can add a new subRFT to the collection with photo, title, and description.
 
 Users can transfer collection to address from home and individual collection page.
