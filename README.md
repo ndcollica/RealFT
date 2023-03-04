@@ -36,7 +36,9 @@ Users can transfer collection to address from home and individual collection pag
 
 ## Team and Partners
 -Matthew Cahn
+
 -Nickolas Collica
+
 -Emily Shelton
 
 
