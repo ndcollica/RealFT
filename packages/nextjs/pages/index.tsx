@@ -32,10 +32,11 @@ const Home: NextPage = () => {
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
             <span className="block text-4xl font-bold">RealFT</span>
-          </h1>
+          </h1>          
           {
             collections.map((val, i) => {
-              <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+              return (
+              <div className="mt-4 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                 <div className="md:flex">
                   <div className="md:shrink-0">
                     <Image
@@ -55,7 +56,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-            })}
+            )})}
         </div>
       </div>
     </>
