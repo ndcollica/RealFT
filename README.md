@@ -35,11 +35,11 @@ Users can add a new subRFT to the collection with photo, title, and description.
 Users can transfer collection to address from home and individual collection page.
 
 ## Team and Partners
--Matthew Cahn
+- Matthew Cahn
 
--Nickolas Collica
+- Nickolas Collica
 
--Emily Shelton
+- Emily Shelton
 
 
 ## Competition
