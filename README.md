@@ -1,20 +1,20 @@
 # RealFT
 
-### Potential Names:
-myDAL (Digital Asset Library)
-RealFT
-ProperNFT
-ProperT
-myProperT
-
 ## Problem
-NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. The general public does not know they can attach NFT’s to real world value.
+NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. They don’t know they can use RealFT’s to enhance the real world value of their physical property.
 
 ## Solution
-RealFT solves this problem by allowing anyone to turn their property into an NFT collection. They can add images with celebrities for provinance, maintanence records, verifiable credentials for property, etc. to the collection to add value to their property by making the papertrail to their property as immutable as the blockchain.
+RealFT solves this problem by allowing anyone to turn their property into a RealFT collection. They can create provenance by adding experiences with VIP’s. They can add maintenance records, verifiable credentials for luxury property, and I’m sure people will think of much more.
 
-### Example
-Let’s say I buy a t-shirt at a concert. I can take a picture of the shirt and mint a new NFT collection. I can then add a subNFT of the shirt being signed by the band! This NFT collection adds value by giving more context to the signature. This can be done with certificates of authenticity of luxury watches, celebrity events with luxury cars, etc. Everyone will see that their NFT’s are attached to things of real world value.
+## Example
+For example: Let’s say I buy a T-shirt at a concert. I can take a picture of the shirt and mint a new RealFT collection. If I can get it signed by the band I can take a picture of that event and add it to the RealFT collection. This adds provenance by giving more context to the signature. 
+
+RealFT’s can be minted by luxury watch authentication partners to add verifiable credentials to luxury watches.
+
+In short: everyone who uses our platform will see their RealFT’s are attached to real world value.
+
+## Investor Opportunity
+So, how would you like to own a piece of the Coinbase of NFT’s? How would you like to own the platform where people seamlessly create rough drafts of RealFT’s of real world property? How would you like to own a piece of the onramp for publishing RealFTs to any blockchain?
 
 ## Market Size and Opportunity
 - The luxury watches market was valued at $43,661.8 million in 2019, and is estimated to reach $51,317.3 million by 2027
