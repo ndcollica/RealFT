@@ -11,10 +11,28 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract Objective is ERC721, ERC721URIStorage, Ownable {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIdCounter;
+  uint256 private _reward;
+  mapping(address => bool) public whiteList;
 
-  constructor() ERC721("RealFT Objective", "RFT") {}
+  struct objectiveType {
+    string name;
+    uint256 tokens;
+  }
 
-  function safeMint(address to, uint256 tokenId) public onlyOwner {
+  mapping(string => objectiveType) objectiveTypes;
+  string[] private objectiveType_result;
+
+  constructor() ERC721("properT Objective", "PRPT") {
+    addType("SignUp", 10);
+    addType("properT", 0);
+  }
+
+  modifier onlyWhitelist() {
+    require(whiteList[msg.sender] == true, "Only whitelist");
+    _;
+  }
+
+  function safeMint(address to, uint256 tokenId) public onlyWhitelist {
     _safeMint(to, tokenId);
   }
 
@@ -22,12 +40,32 @@ contract Objective is ERC721, ERC721URIStorage, Ownable {
     return "https://ipfs.io/ipfs/";
   }
 
-  function mintItem(address to, string memory uri) public returns (uint256) {
+  function mintItem(address to, string memory uri) public onlyWhitelist returns (uint256) {
     _tokenIdCounter.increment();
     uint256 tokenId = _tokenIdCounter.current();
     _safeMint(to, tokenId);
     _setTokenURI(tokenId, uri);
     return tokenId;
+  }
+
+  function addToWhitelist(address add) public onlyWhitelist {
+    whiteList[add] = true;
+  }
+
+  function setReward(uint256 amount) public onlyWhitelist {
+    _reward = amount;
+  }
+
+  function addType(string memory name, uint256 tokens) public {
+    objectiveType memory ot = objectiveTypes[name];
+    ot.name = name;
+    ot.tokens = tokens;
+    objectiveType_result.push(name);
+  }
+
+  function updateType(string memory name, uint256 tokens, string memory newName) public {
+    delete objectiveTypes[name];
+    addType(newName, tokens);
   }
 
   // The following functions are overrides required by Solidity.
