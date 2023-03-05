@@ -1,8 +1,8 @@
 # RealFT
 
-Presentation Video: https://youtu.be/xUr9YoL1AWg
-Technical Explanation Video: https://youtu.be/LkTegbgjUCA
-Wireframe Demo Video: https://youtu.be/NrMZUuqmf5M
+- Presentation Video: https://youtu.be/xUr9YoL1AWg
+- Technical Explanation Video: https://youtu.be/LkTegbgjUCA
+- Wireframe Demo Video: https://youtu.be/NrMZUuqmf5M
 
 
 ## Problem
