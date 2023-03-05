@@ -12,15 +12,18 @@ contract Objective is ERC721, ERC721URIStorage, Ownable {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIdCounter;
   uint256 private _reward;
+  bool private isPrimary;
+  bool private isCompleted;
+  bool private isActive;
+  string private title;
+  string private description;
+  address private parentTokenAddress;
+  uint256 private rewardTokenAmount;
+
+  mapping(address => bool) childNfts;
+  address[] private childNft_result;
+
   mapping(address => bool) public whiteList;
-
-  struct objectiveType {
-    string name;
-    uint256 tokens;
-  }
-
-  mapping(string => objectiveType) objectiveTypes;
-  string[] private objectiveType_result;
 
   constructor() ERC721("properT Objective", "PRPT") {
     addType("SignUp", 10);
@@ -54,18 +57,6 @@ contract Objective is ERC721, ERC721URIStorage, Ownable {
 
   function setReward(uint256 amount) public onlyWhitelist {
     _reward = amount;
-  }
-
-  function addType(string memory name, uint256 tokens) public {
-    objectiveType memory ot = objectiveTypes[name];
-    ot.name = name;
-    ot.tokens = tokens;
-    objectiveType_result.push(name);
-  }
-
-  function updateType(string memory name, uint256 tokens, string memory newName) public {
-    delete objectiveTypes[name];
-    addType(newName, tokens);
   }
 
   // The following functions are overrides required by Solidity.
