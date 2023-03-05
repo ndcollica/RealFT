@@ -1,7 +1,7 @@
 # RealFT
 
 ## Problem
-NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. They don’t know they can use RealFT’s to enhance the real world value of their physical property.
+NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. They don’t know they can use RealFT’s to enhance the real world value of their property.
 
 ## Solution
 RealFT solves this problem by allowing anyone to turn their property into a RealFT collection. They can create provenance by adding experiences with VIP’s. They can add maintenance records, verifiable credentials for luxury property, and I’m sure people will think of much more.
