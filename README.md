@@ -1,5 +1,10 @@
 # RealFT
 
+Presentation Video: https://youtu.be/xUr9YoL1AWg
+Technical Explination Video: https://youtu.be/LkTegbgjUCA
+Wireframe Demo Video: https://youtu.be/NrMZUuqmf5M
+
+
 ## Problem
 NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. They don’t know they can use RealFT’s to enhance the real world value of their property.
 
