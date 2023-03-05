@@ -2,13 +2,36 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { BugAntIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image"
 import React from "react";
 
 const Home: NextPage = () => {
+
+  const collections = [
+    {
+      img: "/assets/rolex.jpg",
+      title: "Rolex Cosmograph Daytona",
+      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity.",
+      subNFTs: 3
+    },
+    {
+      img: "/assets/ethDenBottle.jpg",
+      title: "Eth Denver Water Bottle",
+      description: "Water Bottle from ETH Denver 2018",
+      subNFTs: 1
+    },
+    {
+      img: "/assets/tshirt.png",
+      title: "Rare Vintage Signed 80s Germs Punk Band T Shirt",
+      description: "Rare Vintage 80s Germs Punk Band GI T Shirt XL Signed Darby Crash Patt smear",
+      subNFTs: 2
+    },
+  ]
+
   return (
     <>
       <Head>
-        <title>Scaffold-eth App</title>
+        <title>RealFT</title>
         <meta name="description" content="Created with 🏗 scaffold-eth" />
       </Head>
 
@@ -16,41 +39,33 @@ const Home: NextPage = () => {
         <div className="px-5">
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">scaffold-eth 2</span>
-          </h1>
-          <p className="text-center text-lg">
-            Get started by editing{" "}
-            <code className="italic bg-base-300 text-base font-bold">packages/nextjs/pages/index.tsx</code>
-          </p>
-          <p className="text-center text-lg">
-            Edit your smart contract <code className="italic bg-base-300 text-base font-bold">YourContract.sol</code> in{" "}
-            <code className="italic bg-base-300 text-base font-bold">packages/hardhat/contracts</code>
-          </p>
-        </div>
-
-        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
-          <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <BugAntIcon className="h-8 w-8 fill-secondary" />
-              <p>
-                Tinker with your smart contract using the{" "}
-                <Link href="/debug" passHref className="link">
-                  Debug Contract
-                </Link>{" "}
-                tab.
-              </p>
-            </div>
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <SparklesIcon className="h-8 w-8 fill-secondary" />
-              <p>
-                Experiment with{" "}
-                <Link href="/example-ui" passHref className="link">
-                  Example UI
-                </Link>{" "}
-                to build your own UI.
-              </p>
-            </div>
-          </div>
+            <span className="block text-4xl font-bold">RealFT</span>
+          </h1>          
+          {
+            collections.map((val, i) => {
+              return (
+              <div className="mt-4 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div className="md:flex">
+                  <div className="md:shrink-0">
+                    <Image
+                      className="h-48 w-full object-cover md:h-full md:w-48"
+                      src={val.img}
+                      alt="rolex image"
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                  <div className="p-8">
+                    <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{val.title}</div>
+                    <button className="shadow bg-base-100 rounded-box w-40">View Collection</button>
+                    <p className="mt-2 text-slate-500">subNFT's: {val.subNFTs}</p>
+                    <p className="mt-2 text-slate-500">{val.description}</p>
+                    <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
+                    <button className="shadow bg-base-100 rounded-box w-32">Start Transfer</button>
+                  </div>
+                </div>
+              </div>
+            )})}
         </div>
       </div>
     </>

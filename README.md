@@ -1,3 +1,81 @@
+# RealFT
+
+## Problem
+NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. They don’t know they can use RealFT’s to enhance the real world value of their property.
+
+## Solution
+RealFT solves this problem by allowing anyone to turn their property into a RealFT collection. They can create provenance by adding experiences with VIP’s. They can add maintenance records, verifiable credentials for luxury property, and I’m sure people will think of much more.
+
+## Example
+For example: Let’s say I buy a T-shirt at a concert. I can take a picture of the shirt and mint a new RealFT collection. If I can get it signed by the band I can take a picture of that event and add it to the RealFT collection. This adds provenance by giving more context to the signature. 
+
+RealFT’s can be minted by luxury watch authentication partners to add verifiable credentials to luxury watches.
+
+In short: everyone who uses our platform will see their RealFT’s are attached to real world value.
+
+## Investor Opportunity
+So, how would you like to own a piece of the Coinbase of NFT’s? How would you like to own the platform where people seamlessly create rough drafts of RealFT’s of real world property? How would you like to own a piece of the onramp for publishing RealFTs to any blockchain?
+
+## Market Size and Opportunity
+- The luxury watches market was valued at $43,661.8 million in 2019, and is estimated to reach $51,317.3 million by 2027
+- The global luxury car market size was USD 449.7 billion in 2019 and is projected to reach USD 655.0 billion by 2027, exhibiting a CAGR of 9.3% during the forecast period.
+- The luxury yacht market size was valued at $5.8 billion in 2020 and is expected to reach $12.8 billion by 2031, registering a CAGR of 8.0% from 2022 to 2031.
+- Luxury Yacht, Car, and Watch owners as well as other property owners will be able to add their property to the blockchain increasing the value of the blockchain both by their property and the network effects of their participants.
+
+## Product Functionality
+Users get a burner wallet on visit to the site with the option to sign in with web3auth. Users who authenticate with web3auth will receive tokens to mint 10 free RFT's.
+
+Users will create and view their collection of RealFT Collections using data from Infura, Polygon, and IPFS.
+
+Polygon is the chain where RFTs data is stored
+
+IPFS is where the images are stored
+
+Infura is used to interact with the polygon blockchain.
+
+Users can create a new RFT collection with a photo taken from device or storage.
+
+Users can view collections by clicking on a collection. In the future they will be able to flick through collections as a carousel.
+
+Users can share collections using the Lens button.
+
+Users can add a new subRFT to the collection with photo, title, and description.
+
+Users can transfer collection to address from home and individual collection page.
+
+## Team and Partners
+- Matthew Cahn
+
+- Nickolas Collica
+
+- Emily R Shelton
+
+
+## Competition
+Most NFT companies are working on generating NFT’s of JPEG’s or In Game items. I haven’t yet found one that allows people to make NFT’s of their property though people can do it manually on OpenSea or other platforms.
+
+## Investment Use of Funds
+Development of wallet app with ability to create NFT’s and SubNFT’s and the ability to encrypt private NFT’s.
+
+Tokens for new users to be able to generate 10 NFT’s as an incentive to sign up and use the platform.
+
+Initial diagram for app: https://www.figma.com/file/jKIYo52hNW30A4NcbsHysx/Luxvesting-RealFT-Creation?node-id=0%3A1
+
+## ETH Denver 2023 Bounties
+- #BUIDLathon 2023 NFTs + Metaverse + Gaming Track
+- Best Use of Polygon
+- Build with Web3Auth
+- Integrate Web3Auth Core-Kit SDK in your Ethereum Application
+- Best Use of Infura NFT API
+- Best Lens app
+- Integrate Lens
+- Best Use of Lens Protocol using Infura
+- Deploy your smart contract on Scroll
+- Scroll ♥ Lens | Cross-chain Decentralized Social Media
+
+
+# Built Using:
+
 # Scaffold-Eth 2
 
 ⚠️ This project is currently under active development. Things might break. Feel free to check the open issues & create new ones.
