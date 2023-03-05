@@ -25,10 +25,7 @@ contract Objective is ERC721, ERC721URIStorage, Ownable {
 
   mapping(address => bool) public whiteList;
 
-  constructor() ERC721("properT Objective", "PRPT") {
-    addType("SignUp", 10);
-    addType("properT", 0);
-  }
+  constructor() ERC721("properT Objective", "PRPT") {}
 
   modifier onlyWhitelist() {
     require(whiteList[msg.sender] == true, "Only whitelist");
