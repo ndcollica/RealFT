@@ -1,7 +1,7 @@
 # RealFT
 
 Presentation Video: https://youtu.be/xUr9YoL1AWg
-Technical Explination Video: https://youtu.be/LkTegbgjUCA
+Technical Explanation Video: https://youtu.be/LkTegbgjUCA
 Wireframe Demo Video: https://youtu.be/NrMZUuqmf5M
 
 
