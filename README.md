@@ -11,7 +11,7 @@ For example: Let’s say I buy a T-shirt at a concert. I can take a picture of t
 
 RealFT’s can be minted by luxury watch authentication partners to add verifiable credentials to luxury watches.
 
-In short: everyone who uses our platform will see their RealFT’s are attached to real world value.
+In short: everyone who uses our platform will see their RealFT’s enhance the real world value of their property.
 
 ## Investor Opportunity
 So, how would you like to own a piece of the Coinbase of NFT’s? How would you like to own the platform where people seamlessly create rough drafts of RealFT’s of real world property? How would you like to own a piece of the onramp for publishing RealFTs to any blockchain?
