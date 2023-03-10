@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image"
-import collectionModal from "../components/scaffold-eth";
+import CollectionModal from "./collectionModal";
 
 export default function collection() {   
   const collections = [
@@ -47,7 +47,7 @@ export default function collection() {
                   </div>
                   <div className="p-8">
                     <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{val.title}</div>
-                    <button className="shadow bg-base-100 rounded-box w-40">View Collection</button>
+                    <CollectionModal />
                     <p className="mt-2 text-slate-500">subNFT's: {val.subNFTs}</p>
                     <p className="mt-2 text-slate-500">{val.description}</p>
                     <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
