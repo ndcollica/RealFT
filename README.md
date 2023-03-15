@@ -1,26 +1,31 @@
 # RealFT
 
+- Presentation Video: https://youtu.be/xUr9YoL1AWg
+- Technical Explanation Video: https://youtu.be/LkTegbgjUCA
+- Wireframe Demo Video: https://youtu.be/NrMZUuqmf5M
+
+
 ## Problem
-NFT’s have a bad rep. NFT’s sold for thousands are now worthless. The general public feels they are just meaningless jpegs they can right click and copy at will. They don’t know they can use RealFT’s to enhance the real world value of their property.
+NFTs have a bad rep. NFTs sold for thousands are now worthless. The general public feels they are meaningless jpegs they can right-click and copy at will. They don’t know they can use RealFTs to enhance the real-world value of their property.
 
 ## Solution
-RealFT solves this problem by allowing anyone to turn their property into a RealFT collection. They can create provenance by adding experiences with VIP’s. They can add maintenance records, verifiable credentials for luxury property, and I’m sure people will think of much more.
+RealFT solves this problem by allowing anyone to turn their property into a RealFT collection. They can create provenance by adding experiences with VIPs. They can add maintenance records, and verifiable credentials for luxury properties, and I’m sure people will think of much more.
 
 ## Example
-For example: Let’s say I buy a T-shirt at a concert. I can take a picture of the shirt and mint a new RealFT collection. If I can get it signed by the band I can take a picture of that event and add it to the RealFT collection. This adds provenance by giving more context to the signature. 
+For example: Let’s say I buy a T-shirt at a concert. I can take a picture of the shirt and mint a new RealFT collection. If I can get it signed by the band I can take a picture of that event and add it to the RealFT collection. This adds provenance by giving more context to the signature.
 
-RealFT’s can be minted by luxury watch authentication partners to add verifiable credentials to luxury watches.
+RealFTs can be minted by luxury watch authentication partners to add verifiable credentials to luxury watches.
 
-In short: everyone who uses our platform will see their RealFT’s are attached to real world value.
+In short: everyone who uses our platform will see their RealFTs enhance the real-world value of their property.
 
 ## Investor Opportunity
-So, how would you like to own a piece of the Coinbase of NFT’s? How would you like to own the platform where people seamlessly create rough drafts of RealFT’s of real world property? How would you like to own a piece of the onramp for publishing RealFTs to any blockchain?
+So, how would you like to own a piece of the Coinbase of NFTs? How would you like to own the platform where people seamlessly create rough drafts of RealFTs of real-world property? How would you like to own a piece of the onramp for publishing RealFTs to any blockchain?
 
 ## Market Size and Opportunity
 - The luxury watches market was valued at $43,661.8 million in 2019, and is estimated to reach $51,317.3 million by 2027
 - The global luxury car market size was USD 449.7 billion in 2019 and is projected to reach USD 655.0 billion by 2027, exhibiting a CAGR of 9.3% during the forecast period.
 - The luxury yacht market size was valued at $5.8 billion in 2020 and is expected to reach $12.8 billion by 2031, registering a CAGR of 8.0% from 2022 to 2031.
-- Luxury Yacht, Car, and Watch owners as well as other property owners will be able to add their property to the blockchain increasing the value of the blockchain both by their property and the network effects of their participants.
+Luxury Yacht, Car, and Watch owners as well as other property owners will be able to add their property to the blockchain increasing the value of the blockchain both by their property and the network effects of their participants.
 
 ## Product Functionality
 Users get a burner wallet on visit to the site with the option to sign in with web3auth. Users who authenticate with web3auth will receive tokens to mint 10 free RFT's.
