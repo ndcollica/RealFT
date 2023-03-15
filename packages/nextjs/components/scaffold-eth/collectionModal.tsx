@@ -9,14 +9,19 @@ export default function collectionModal() {
       description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity.",
     },
     {
-      img: "/assets/ethDenBottle.jpg",
-      title: "Eth Denver Water Bottle",
-      description: "Water Bottle from ETH Denver 2018",
+      img: "/assets/rolexBack.jpg",
+      title: "Rolex Cosmograph Daytona Back",
+      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity.",
     },
     {
-      img: "/assets/tshirt.png",
-      title: "Rare Vintage Signed 80s Germs Punk Band T Shirt",
-      description: "Rare Vintage 80s Germs Punk Band GI T Shirt XL Signed Darby Crash Patt smear",
+      img: "/assets/rolexBottom.jpg",
+      title: "Rolex Cosmograph Daytona Bottom",
+      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity.",
+    },
+    {
+      img: "/assets/rolexSide.jpg",
+      title: "Rolex Cosmograph Daytona Side",
+      description: "New and unworn. An inspection by our certified watchmakers guarantees authenticity.",
     },
   ]
   return (
@@ -38,12 +43,8 @@ export default function collectionModal() {
           </label>
           <div className="space-y-3">
             <div className="flex space-x-4">
-              <div>
-                <span className="text-sm font-bold">From:</span>
-              </div>
-              <div>
-                <span className="text-sm font-bold pl-3">Available:</span>
-              </div>
+            <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
+                    <button className="shadow bg-base-100 rounded-box w-32">Transfer Collection</button>
             </div>
             {
             collection.map((val, i) => {
@@ -55,22 +56,17 @@ export default function collectionModal() {
                       className="h-48 w-full object-cover md:h-full md:w-48"
                       src={val.img}
                       alt="rolex image"
-                      width={100}
-                      height={100}
+                      width={500}
+                      height={500}
                     />
                   </div>
                   <div className="p-8">
                     <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{val.title}</div>
                     <p className="mt-2 text-slate-500">{val.description}</p>
-                    <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
-                    <button className="shadow bg-base-100 rounded-box w-32">Start Transfer</button>
                   </div>
                 </div>
               </div>
-            )})}
-            <div className="flex flex-col space-y-3">             
-                <span>Send</span>             
-            </div>
+            )})}            
           </div>
         </label>
       </label>
